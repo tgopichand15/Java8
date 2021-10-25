@@ -10,11 +10,22 @@ public class Employee {
 
     String Bloodgroup;
 
-    public Employee(String Name,int yearsOfExperience,int Salary,String Bloodgroup){
+    String Department;
+
+    public String getDepartment() {
+        return Department;
+    }
+
+    public void setDepartment(String department) {
+        Department = department;
+    }
+
+    public Employee(String Name, int yearsOfExperience, int Salary, String Bloodgroup,String Department){
         this.Name=Name;
         this.yearsOfExperience=yearsOfExperience;
         this.Salary=Salary;
         this.Bloodgroup=Bloodgroup;
+        this.Department=Department;
     }
 
     public String getName() {
@@ -56,6 +67,7 @@ public class Employee {
                 ", yearsOfExperience=" + yearsOfExperience +
                 ", Salary=" + Salary +
                 ", Bloodgroup='" + Bloodgroup + '\'' +
+                ", Department='" + Department + '\'' +
                 '}';
     }
 }
